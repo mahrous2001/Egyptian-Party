@@ -1,0 +1,142 @@
+:root
+{
+    --main-color:#800080;
+    --second-color:#ffb6c1;
+    --normal-foucs-color:#d99c39;
+    --normal-box-shadow-color:#fec26055;
+    --sucess-foucs-color:#198754;
+    --sucess-box-shadow-color:#19875440;
+    --falid-foucs-color:#dc3545;
+    --falid-box-shadow-color:#dc354540;
+}
+.py-6 
+{
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important;
+}
+body
+{
+    overflow: hidden;
+}
+/* =============== Loading =============== */
+.loading
+{
+    position: fixed;
+    background-color: white;
+    inset: 0;
+    z-index: 999999999999;
+    display: flex;
+}
+/* =============== Navigation Bar =============== */
+nav
+{
+    position: relative;
+}
+.fixed-left
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1030;
+}
+nav a:hover
+{
+    color: var(--main-color) !important;
+}
+nav .fa-xmark
+{
+    position: absolute;
+    right: 7px;
+    top:5px;
+    cursor: pointer;
+}
+/* =============== Home =============== */
+header
+{
+    height: 90vh;
+    background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: cover ;
+    position: relative;
+}
+#home .open
+{
+    position: absolute;
+    top: 56%;
+    left: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/* =============== Deatils =============== */
+#details h1
+{
+    background-color: #E68285;
+    color: white;
+    cursor: pointer;
+}
+#details .show
+{
+    display: block;
+}
+#details p
+{
+    background-color: var(--second-color);
+    display: none;
+}
+/* =============== Duration =============== */
+#duration
+{
+  background: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-image: cover;
+}
+#duration .border
+{
+    border: 2px solid white!important
+}
+#duration .border h1
+{
+    color: #fff;
+}
+/* =============== Contact =============== */
+#contact .icons i
+{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#contact .icons i:hover
+{
+    background-color: var(--main-color);
+    color: white !important;
+}
+
+#contact .btn-purple
+{
+    background-color: var(--main-color);
+    transition: all 0.5s;
+}
+#contact .btn-purple:hover
+{
+    background-color: var(--second-color);
+    color: black !important;
+}
+#contact .form-control:focus
+{
+    border-color: var(--normal-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--normal-box-shadow-color);
+}
+#contact .form-control.is-invalid:focus
+{
+    border-color: var(--falid-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--falid-box-shadow-color);
+}
+#contact .is-valid:focus
+{
+    border-color: var(--sucess-foucs-color);
+    box-shadow: 0 0 0 0.25rem var(--sucess-box-shadow-color);
+}
